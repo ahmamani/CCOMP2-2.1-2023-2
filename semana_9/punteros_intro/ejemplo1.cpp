@@ -4,7 +4,6 @@ using namespace std;
 
 int main() {
     // Puntero: variable que almacena direcciones de memoria
-
     int x = 10;
 
     // Declaración: TIPO *NOMBRE_PUNTERO;
@@ -13,7 +12,7 @@ int main() {
     // OPERADORES:
     // Operador & (operador de dirección): nos sirve para extraer o conocer la dirección de memoria 
     //              de dicha variable u objeto.
-    cout << &x << endl;    
+    cout << &x << endl;    // imprime la dirección de memoria de la variable
     cout << ptr << endl;
 
     // Operador * (operador de indirección): nos sirve para extraer o conocer el CONTENIDO (valor) de la 

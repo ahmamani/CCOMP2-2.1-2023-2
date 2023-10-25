@@ -11,13 +11,12 @@ int main() {
     p.print();
 
     // Crear un puntero de tipo Punto.
-    Punto *ptr;
     // Hacer que dicho puntero apunte a p
-    ptr = &p;
+    Punto *ptr = &p;    
     // modificar los valores de 'x' y 'y' usando 
     //          el puntero
     ptr->setX(5);
-    ptr->setY(4);
+    ptr->setY(10);
     // invocar a la función print usando el 
     //          puntero.
     ptr->print();
