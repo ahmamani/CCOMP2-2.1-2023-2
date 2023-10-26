@@ -11,6 +11,9 @@ class Integer {
             val = v;
             std::cout << "default constructor" << std::endl;
         }
+        ~Integer() {
+            std::cout << "Invocando destructor" << std::endl;
+        }
         int getVal() const {
             return val;
         }

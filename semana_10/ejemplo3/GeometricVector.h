@@ -1,5 +1,5 @@
 #ifndef __GEOMETRIC_VECTOR_H__
-#define ___GEOMETRIC_VECTORH__
+#define __GEOMETRIC_VECTOR_H__
 
 #include <cmath>
 #include "Point.h"
