@@ -52,15 +52,42 @@ class DynIntegerArray {
             [2 3 5 ] --- insert(1, 10) --- [ 2 10 3 5 ]
         */
         void insert(int pos, int val) {
+            if (pos < 0 || pos > size){
+                std::cout << "No es posible ingresar" << std::endl;
+                return;
 
-        }
+            }
+            int* tmp = new int [size+1];
+            for(int i = 0; i < pos; i++){
+                tmp[i] = data[i];
+            }
+            tmp[pos] = val;
+
+            for(int i = pos; i < size; i++){
+                tmp[i+1] = data[i];
+            }
+            delete[] data;
+            this -> size++;
+            data = tmp;  
+         }
 
         /*
             [ 2 3 5 ] --- remove(1) --- [ 2 5 ]
         */
         void remove(int pos) {
-
-        }
+            int* tmp = new int [size-1];
+            
+            for(int i = 0; i < size-1 ; i++){
+                tmp[i]=data[i];
+                if(i >= pos){
+                    tmp[i]=data[i+1];
+                }
+                
+            }
+            delete[] data;
+            this -> size--;
+            data = tmp;  
+         }
 
         int getSize() const {
             return size;

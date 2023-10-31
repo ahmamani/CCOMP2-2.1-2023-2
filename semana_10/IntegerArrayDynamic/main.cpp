@@ -11,5 +11,11 @@ int main() {
     a.push_back(5);
     a.print();
 
+
+    a.insert(1,10);
+    a.print();
+
+    a.remove(1);
+    a.print();
     return 0;
 }
