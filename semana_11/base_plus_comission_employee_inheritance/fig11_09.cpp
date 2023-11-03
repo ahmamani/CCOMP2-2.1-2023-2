@@ -22,5 +22,13 @@ int main() {
 
     cout << "\n\nEmployee's earnings: $" << employee.earnings() << endl;
 
+    // crear un puntero ptr de tipo ComissionEmployee.
+    // hacer que el puntero ptr apunte a employee
+    // invocar al método toString .... explicar l método         de qué clase se invoca
+
+    ComissionEmployee *ptr;
+    ptr = &employee;
+    cout<< ptr->toString()<< endl;
+
     return 0;
 }
