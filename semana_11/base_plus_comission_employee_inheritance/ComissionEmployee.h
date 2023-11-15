@@ -24,7 +24,7 @@ class ComissionEmployee {
         double getComissionRate() const;
 
         double earnings() const;
-        std::string toString() const;
+        virtual std::string toString() const;
     protected:
         std::string firstName;
         std::string lastName;
